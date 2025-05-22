@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>BACK TO 2K17</title>
+</head>
+<body>
+    <div class="block1 visible">
+        <img src="images/glav333.png" alt="Фото с вечеринки">
+        <div class="text">
+            <h1>BACK TO 2K17</h1>
+            <p>Скучаешь по 2017 и восхищаешься эстетикой той эпохи?<br> 
+                Мы сможем вернуть тебя в ту самую атмосферу на 
+                большой<br> ночной вечеринке в Екатеринбурге.</p>
+                <hr color="plum" size="2px" width="600px">
+            <p>19 Апреля в 23:00 мы c вами возрождаем легендарный 
+                вайб<br> 2017 года и устраиваем грандиозную вписку в 
+                концерт холл<br> "Нирвана", где сотни модных ребят 
+                погрузятся в музыку от<br> Pharaoh, лсп, фасе, Lil Peep,
+                 Bones, Пошлая Молли, Макс Корж<br> и многих других 
+                 культовых исполнителей. Здесь мы насладимся<br> 
+                 ностальгией, вместе зафлексим под самые главные 
+                 треки из<br> 2015-2018 годов, погрузимся c головой 
+                 в ту самую атмосферу<br> и тренды. Воспоминаний o моде,
+                  музыке и других трендах<br> - всё будет на Свите!</p>
+        </div>
+        
+    </div>
+    <div class="logo">
+        <img src="images/logo.png" alt="Логотип компании">
+    </div>
+    <div class="grad">
+    <div class="block2">
+        <h2>ПОЧЕМУ ЭТУ ТУСОВКУ ЖДУТ ВСЕ?</h2>
+        <p class="adv1">ТОПОВЫЙ ТАНЦПОЛ</p>
+        <p class="adv2">ЛУЧШАЯ АТМОСФЕРА</p>
+        <p class="adv3">НОВЫЕ ЗНАКОМСТВА</p>
+        <p class="adv4">СУПЕРСКИЕ ФОТОЧКИ</p>
+    </div>
+    <div class="block3">
+        <div class="dancef">
+            <img src="images/dancef.jpg" alt="Категория танцпол"class="rotatable">
+            <form action="https://ekb.qtickets.events/159248-svita-2k17-party-19-aprelya-nirvana"target="_blanc">
+                    <button>КУПИТЬ</button>
+                </form>
+        </div>
+        <div class="oneplusone">
+            <img src="images/1lpus1.jpg" alt="Категория 1+1"class="rotatable">
+            <form action="https://ekb.qtickets.events/159248-svita-2k17-party-19-aprelya-nirvana"target="_blanc">
+                    <button>КУПИТЬ</button>
+            </form>
+        </div>
+        <div class="vip">
+            <img src="images/vip.jpg" alt="Категория VIP"class="rotatable">
+            <form action="https://ekb.qtickets.events/159248-svita-2k17-party-19-aprelya-nirvana"target="_blanc">
+                    <button>КУПИТЬ</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <hr color="black" size="3px" >
+        <h3>КОНТАКТЫ</h3>
+        <div class="social">
+            <form action="https://vk.com/event226567246"target="_blanc">
+                <button>ВКОНТАКТЕ</button>
+            </form>
+                </form>
+                <form action="https://t.me/sweetaekb"target="_blanc">
+                    <button>TELEGRAM</button>
+                    </form>
+                    <form action="https://www.instagram.com"target="_blanc">
+                    <button>INSTAGRAM</button>
+                    </form>
+
+        </div>
+        <div class="org">
+            <img src="images/logo.png" alt="Логотип компании">
+            <p>Организатор:<br>
+ИП Бакин Егор Олегович<br>
+ИНН: 450126370394. ОГРН: 324665800120710</p>
+<p>Copyright © 2025. All rights reserved.</p>
+        </div>
+    </div>
+    </div>
+</body>
+<script> function onEntry(entry) {
+  entry.forEach(change => {
+    if (change.isIntersecting) {
+     change.target.classList.add('element-show');
+    }
+  });
+}
+
+let options = {
+  threshold: [0.5] };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.block2');
+
+for (let elm of elements) {
+  observer.observe(elm);
+}</script>
+</html>
